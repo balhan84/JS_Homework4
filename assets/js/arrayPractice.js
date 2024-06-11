@@ -58,8 +58,11 @@ console.log(notSubscribed);
 // }
 // console.log(users);
 
-//Змінити email користувачу з id 2 (можна спробувати використати find).
+// Змінити email користувачу з id 2 (можна спробувати використати find).
 // const foundId = users.findIndex((users) => users.id === 2);
+// if (foundId !== -1) {
+//   users[foundId].email = "new@mail";
+// }
 // console.log(foundId);
 
 //*Визначити, який відсоток користувачів підписані (subscribed).
