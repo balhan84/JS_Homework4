@@ -1,37 +1,37 @@
 // task#1
 // Створити числовий масив та проініціалізувати його
-const numbers = [];
-const amountNumbers = 7;
-for (let i = 0; i < amountNumbers; i++) {
-  numbers.push(Math.floor(Math.random() * 10));
-}
-console.log(numbers);
-// Видалити останній і початковий елемент з масиву, додати елемент до початку і кінця.
-const lastEl = numbers.pop();
-const firstEl = numbers.shift();
-numbers.push(25);
-numbers.unshift(11);
+// const numbers = [];
+// const amountNumbers = 7;
+// for (let i = 0; i < amountNumbers; i++) {
+//   numbers.push(Math.floor(Math.random() * 10));
+// }
+// console.log(numbers);
+// // Видалити останній і початковий елемент з масиву, додати елемент до початку і кінця.
+// const lastEl = numbers.pop();
+// const firstEl = numbers.shift();
+// numbers.push(25);
+// numbers.unshift(11);
 
-//Вивести розмір масиву.
-console.log(numbers.length);
-//Зробити копію масиву.
-const numbers2 = [...numbers];
-// Вивести елементи з парними індексами.
-for (const index in numbers) {
-  if (index % 2 === 0 && index >= 0) {
-    console.log(index);
-  }
-}
+// //Вивести розмір масиву.
+// console.log(numbers.length);
+// //Зробити копію масиву.
+// const numbers2 = [...numbers];
+// // Вивести елементи з парними індексами.
+// for (const index in numbers) {
+//   if (index % 2 === 0 && index >= 0) {
+//     console.log(index);
+//   }
+// }
 // Знайти добуток елементів масиву.
 
-function multArray(arr) {
-  let mult = 1;
-  for (let i = 0; i < arr.length; i++) {
-    mult *= arr[i];
-  }
-  return mult;
-}
-console.log(multArray(numbers));
+// function multArray(arr) {
+//   let mult = 1;
+//   for (let i = 0; i < arr.length; i++) {
+//     mult *= arr[i];
+//   }
+//   return mult;
+// }
+// console.log(multArray(numbers));
 
 // Задано масив з описом телефонів з полями id, brand, model, color, price, RAM
 
@@ -152,12 +152,12 @@ console.log(multArray(numbers));
 
 // Отримати новий масив їх заданого, який міститиме всі елементи вихідного, поділені на 100 (99, 5, 0, 9, 30 => 0.99, 0.05, 0, 0.09, 0.3). // map
 
-// const numbers = [99, 5, 0, 9, 30];
-// const divideNumbers = numbers.map((numbers) => ({
-//   ...numbers,
-//   numbers: numbers / 100,
-// }));
-// console.log(divideNumbers);
+const numbers = [99, 5, 0, 9, 30];
+const divideNumbers = numbers.map((numbers) => ({
+  ...numbers,
+  numbers: numbers / 100,
+}));
+console.log(divideNumbers);
 
 // // Вивести елементи масиву, зведені у куб. // forEach
 
