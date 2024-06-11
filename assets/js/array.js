@@ -152,12 +152,9 @@
 
 // Отримати новий масив їх заданого, який міститиме всі елементи вихідного, поділені на 100 (99, 5, 0, 9, 30 => 0.99, 0.05, 0, 0.09, 0.3). // map
 
-const numbers = [99, 5, 0, 9, 30];
-const divideNumbers = numbers.map((numbers) => ({
-  ...numbers,
-  numbers: numbers / 100,
-}));
-console.log(divideNumbers);
+// const numbers = [99, 5, 0, 9, 30];
+// const divideNumbers = numbers.map((numbers) => numbers / 100);
+// console.log(divideNumbers);
 
 // // Вивести елементи масиву, зведені у куб. // forEach
 
