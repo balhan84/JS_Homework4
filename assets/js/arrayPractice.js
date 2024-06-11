@@ -42,10 +42,10 @@ console.log(notSubscribed);
 // users.forEach((user) => console.log(user.getFullName()));
 
 // Отримати масив повних імен осіб жіночої статі шкільного віку (6 – 18 років).
-const listFemale = users
-  .filter((users) => !users.isMale && users.age >= 6 && users.age <= 18)
-  .map((user) => user.getFullName());
-console.log(listFemale);
+// const listFemale = users
+//   .filter((users) => !users.isMale && users.age >= 6 && users.age <= 18)
+//   .map((user) => user.getFullName());
+// console.log(listFemale);
 
 //Видалити з масиву користувача з email  useremail5@gmail.com.
 
@@ -53,7 +53,9 @@ console.log(listFemale);
 //   (users) => users.email === "useremail5@gmail.com"
 // );
 // console.log(foundEmail);
-// users.splice(foundEmail, 1);
+// if (foundEmail !== -1) {
+//   users.splice(foundEmail, 1);
+// }
 // console.log(users);
 
 //Змінити email користувачу з id 2 (можна спробувати використати find).
